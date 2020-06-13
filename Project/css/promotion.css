@@ -1,0 +1,427 @@
+/* -------------------- reset --------------------------- */
+
+html,.wrap,h1,h2,h3,span,p, body, head{
+	border: 0;
+    margin: 0 auto;
+    padding: 0;
+    font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+    font-style:normal;
+}
+ul, li, ol{
+list-style: none;
+padding: 0;
+margin: 0;
+ }
+ .blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden; 
+}    
+
+a {
+    text-decoration: none;
+}
+.wrap{
+    width:100%;
+}
+
+button{
+    border:none;
+    background:none;
+    cursor: pointer;
+    overflow:visible;
+    white-space:nowrap;
+}
+
+/* -------------------- header --------------------------- */
+.header_logo{
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(64, 64, 64, 0.75);
+    width:100%;
+    height:66px;
+}
+
+
+.top_button{
+    z-index: 11;
+    position: fixed;
+    right:0;
+    bottom:180px;
+    background:url("../image/go_top.gif") no-repeat 0 0;
+    width:100px;
+    height:100px;
+}
+
+.top_button_link{
+    z-index: 12;
+    position: fixed;
+    right:0;
+    bottom:180px;
+    width:100px;
+    height:100px;
+}
+
+.header{
+    width:100%;
+    height:100%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.logo_link {
+    position: absolute;
+    top: 22px;
+    left: 25%;
+    right: 0;
+    color: #fff;
+    width:106px;
+    height:22px;
+    background:url("../image/logo.png") no-repeat 0 0;
+}
+
+/* 
+.logo_link::after{
+    position: absolute;
+    content:'';
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:url("../image/logo.png") no-repeat 0 0;
+} */
+
+
+
+
+/* -------------------- main -------------------- */
+.wrap_main_banner{
+    position: relative;
+    width:100%;
+    height:750px;
+    background-color:#fff;
+}
+
+
+.main_banner_background_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    background:url(../image/section_invite.jpg) no-repeat 0 0;
+    background-position:center;
+}
+
+/* ----------------------- content:creator ------------------- */
+
+.wrap_content_creator{
+    width: 100%;
+    height: 822px;
+    /* 임시 */
+}
+
+.content_creator_backgroud{
+    position: relative;
+    width: 100%;
+    height:822px;
+    background-color:#f9939d; 
+}
+
+.content_creator_background_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 822px;
+    background:url(../image/section_creator.jpg) no-repeat 0 0;
+    /* background-size: 1920px 822px; */
+    background-position:center;
+} 
+
+/* ----------------------- content:store background ------------------- */
+
+.wrap_content_store{
+    width: 100%;
+    height: 1084px;
+}
+
+.content_store_background{
+    position: relative;
+    width: 100%;
+    height:1084px;
+    background-color:#d5e43f; 
+}
+
+.content_store_background_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1084px;
+    background:url(../image/section_store.jpg) no-repeat 0 0;
+    background-size: 1920px 1084px;
+    background-position:center;
+}
+
+/* ----------------------- content:store image ------------------- */
+.thumbnail_image_list{
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding: 300px 0px 10px;
+}
+.thumbnail{
+    display:inline;
+}
+
+.thumbnail_set{
+    float:left;
+}
+.thumbnail_set + .thumbnail_set {
+    margin-left:20px;
+} 
+.thumbnail_set:nth-child(4n+1) /*1, 5, 9 ...*/
+{
+    margin-left:0px;
+}
+
+.thumbnail_image_fruit {
+    clear:both;
+}
+
+.thumbnail_image_fruit img{ /*float 해제*/
+    border-radius: 10px;
+}
+
+.thumbnail_info{
+    height:140px;
+    text-align: center;
+}
+
+.name{
+    display:block;
+    color:#1b1d21;
+    font-size:20px;
+    padding: 10px 10px;
+}
+
+.price{
+    color: #1b1d21;
+    font-size: 20px;
+}
+
+.price strong{
+    color: #1b1d21;
+    font-size:28px;
+    font-style:bold;
+}
+
+/* ----------------------- content:recipe ------------------- */
+.wrap_content_recipe{
+    width:100%;
+    height:1030px;
+}
+
+.content_recipe_background{
+    position: relative;
+    width: 100%;
+    height:1030px;
+    background-color:#b893f9; 
+}
+
+.content_recipe_background_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1030px;
+    background:url(../image/section_recipe.png) no-repeat 0 0;
+    background-position:center;
+    z-index:10;
+}
+
+.content_recipe_background_pattern{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:url(../image/pattern_recipe.png) repeat-x  0 0;
+    background-position: center;
+} 
+
+.content_recipe_food_link{
+    width:980px;
+    height:482px;
+    margin:373px auto 0px;
+}
+
+.recipe_food_link{
+    position: relative;
+    width:480px;
+    height:482px;
+    float:left;
+}
+
+.recipe_food_link:after{
+    clear:both;
+    overflow: hidden;
+    content:'';
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.recipe_food_link + .recipe_food_link{
+    margin-left:20px;
+}
+.content_recipe_button_link{
+    position: relative;
+    text-align: center;
+    margin-top:50px;
+    width:100%;
+    height:91px;
+}
+.btn_recipe_button {
+    width:310px;
+    height:91px;
+    background-image:url(../image/go_recipe.gif);
+}
+.btn_recipe_button:hover{
+    background-image:url(../image/go_recipe_over.gif);
+}
+
+/* -------------------------content:FAQ----------------------- */
+
+.wrap_content_FAQ{
+    width:100%;
+    height:100%;
+}
+.content_FAQ_background{   
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:150px auto 100px;
+    background-color:#fff;
+}
+
+
+.content_FAQ_title{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.content_FAQ_title{
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+
+.FAQ_set{
+    width: 980px;
+    margin:0 auto;
+    border-top:1px solid #a1a5ad;
+    margin-bottom: -1px;
+}
+
+
+.FAQ_questions{
+    position: relative;
+    width:980px;
+    line-height:28px;
+  
+}
+.question_main{
+    position: relative;
+}
+
+
+.question_Q{
+    float:left;
+    padding:20px 0px 0 10px;
+    margin:0;
+    width:30px;
+    height:30px;
+    font-size:20px;
+    color:#1b1d21;
+    font-weight:bold;
+}
+.question_content{
+    padding:20px 100px 0 0;
+    margin:0;
+    font-size:20px;
+    color:#1b1d21;
+    font-weight:bold;
+    overflow: hidden;
+}
+
+.question_arrow{
+    width:105px;
+    padding:0;
+    height:100%;
+}
+.question_wrap_arrow{ 
+    position: absolute;
+    right:0;
+    bottom:50%;
+    width:105px;
+    text-align: center;
+    padding:0;
+}
+
+
+.FAQ_asked{
+    padding:15px 0px 20px 10px;
+    background-color:#f7f8fa;
+}
+
+.asked_main{
+    position: relative;
+}
+.asked_A{
+    float:left;
+    padding:20px 0px 0 0px;
+    margin:0;
+    width:30px;
+    height:30px;
+    font-size:20px;
+    color:#ff0000;
+    font-weight:bold;
+}
+
+.asked_A:after{
+    clear:both;
+}
+.asked_content{
+    padding:20px 80px 0 0;
+    margin:0;
+    font-size:16px;
+    line-height:28px;
+    color:#60656e;
+    overflow: hidden;
+}
+
+/* ------------------------  footer : copyright  ------------------------------ */
+
+.footer_copyright{
+    background-color:#e0e4eb;
+    text-align: center;
+    line-height: 80px;
+    height:80px;
+}
+.copyright{
+    font-size: 18px;
+    color:#70757d;
+
+}
+.copyright strong{
+    font-weight: bold;
+}
